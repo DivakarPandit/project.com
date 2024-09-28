@@ -1,0 +1,871 @@
+<html>
+	<head>
+		<title>Project 1</title>
+		<style type="text/css">
+			body{
+					margin:0;
+					padding:0;
+				}
+				#mainarea{
+						width:1679px;
+						height:8560px;
+						background: #f3faf2 ;
+						border-radius:10px;
+						}
+				#menuarea{
+						width:1679px;
+						height:850px;
+						background:url('back1.jpg') no-repeat fixed;
+						background-size:100% 100%;
+						}
+				#menuarea h2{
+						color:white;
+						text-align:right;
+						margin:40px 180px 0 0;
+						font:bold 40px arial;
+						text-shadow: 7px 7px 10px #EB8116;
+						}
+				#menuarea p{
+						color:white;
+						text-align:right;
+						margin:0 40px 0 0;
+						font:bold 80px arial;
+						text-shadow: 7px 7px 10px #094207;
+						}
+				#toparea{
+						width:1679px;
+						height:70px;
+						background:#094207;
+						position:sticky;
+						top:0;
+						z-index:2000;
+						}
+				#topleft{
+						width:1000px;
+						height:50px;
+						background:#094207;
+						float:left;
+						}
+				#topright{
+						width:679px;
+						height:50px;
+						background:#094207;
+						float:left;
+						}
+				#topleft ul{
+						list-style:none;
+						margin:10px 20px;
+						padding:10px;
+						}
+				#topright a{
+						color:white;
+						font-size:20px;
+						background:transparent;
+						text-decoration:none;
+						border-radius:20px;
+						float:right;
+						margin:10px 80px;
+						letter-spacing:4px;
+						word-spacing:5px;
+						padding:10px 25px; 
+						border-top:solid 3px #EB8116;
+						border-bottom:solid 3px #EB8116;
+						box-shadow: 6px 7px 15px 0px rgba(0,0,0,0.75);
+						}
+				#topright a:hover{
+						background:linear-gradient(to top,#EB8116,transparent);
+						}
+				#topleft ul li{
+						float:left;
+						}
+				#topleft ul li a:link,#topleft ul li a:visited{
+							color:white;
+							font-size:20px;
+							background:transparent;
+							text-decoration:none;
+							letter-spacing:4px;
+							padding:5px 25px;
+							display:block;
+							text-align:center;
+							border-radius:10px;
+						}
+				#topleft ul li:nth-child(1){
+							border-bottom:solid 3px #EB8116;
+							border-radius:10px;
+						}
+				#topleft ul li a:hover{
+							border-bottom:solid 3px #EB8116;
+						}
+				#slidearea{
+						width:1679px;
+						height:800px;
+						background:white;
+						}
+				#slide1{
+						width:739px;
+						height:700px;
+						background:url('water.jpg') no-repeat;
+						background-size:100% 100%;
+						margin:50px;
+						box-shadow:0px 0px 12px 1px rgba(0,0,0,0.75);
+						float:left;
+						}
+				#slide2{
+						width:739px;
+						height:700px;
+						background:white;
+						margin:50px;
+						float:right;
+						}
+				#slide2 h1{
+						font-style:italic;
+						color:#094207;
+						font-size:70px; 
+						text-shadow: 7px 7px 10px gray;
+						}
+				#colored-line{
+					color:#EB8116;
+					font-size:50px; 
+				}
+				#slide2 h2{
+						font-family:monospace;
+						color:#EB8116;
+						font-size:40px; 
+						text-decoration:underline;
+						font-family:sans-serif;
+						}
+				#slide2 p{
+						text-align:justify;
+						color:black;
+						font-size:30px;  
+						line-height:35px;
+						}
+				#darea{
+						width:1679px;
+						height:720px;
+						background:transparent;
+						}
+				#darea h1{
+						text-align:center;
+						font-size:55px;
+						margin:40px 0 0 0;
+						}
+				#darea h1:hover{
+						color:#115408;
+						}
+				#d1{
+						width:679px;
+						height:540px;
+						background:url('people.jpg') no-repeat;
+						background-size:100% 100%;
+						box-shadow:0px 0px 15px 1px rgba(0,0,0,0.75);
+						margin:80px;
+						float:left;
+						position:relative;
+						opacity:0.8;
+						transition:opacity 4s;
+						transition:transform 2s;
+						}
+				.details{
+						position:absolute;
+						bottom:0px;
+						color:white;
+						font:bold 30px cursive;
+						text-align:center;
+						width:100%;
+						padding:30px 0;
+						background:linear-gradient(to top,black,transparent);		
+					}
+				#d2{
+						width:679px;
+						height:540px;
+						background:url('couple.jpg') no-repeat;
+						background-size:100% 100%;
+						box-shadow:0px 0px 12px 1px rgba(0,0,0,0.75); 
+						margin:80px;
+						float:right;
+						position:relative;
+						opacity:0.8;
+						transition:opacity 4s;
+						transition:transform 2s;
+						}
+				#d1:hover,#d2:hover{
+						opacity:1;
+						transform:scale(1.1);
+				}	
+				#favarea{
+						width:1679px;
+						height:1500px;
+						background:url(fback.jpg) no-repeat fixed;
+						background-size:100% 100%;
+						}
+				#favarea img{
+						margin:0px 685px;
+						border-top:double 4px #094207;
+						border-right:double 4px #094207;
+						border-left:double 4px #094207;
+						box-shadow: 0px -1px 13px 0px rgba(0,0,0,0.75);
+						}
+				#favarea img:hover{
+						transform:scale(1.1);
+						background:#094207;
+						border-top:double 4px #f3faf2;
+						border-right:double 4px #f3faf2;
+						border-left:double 4px #f3faf2;
+						box-shadow: 0px 9px 13px 0px rgba(0,0,0,0.75);
+						}
+				#favarea h2{
+						color:white;
+						float:left;
+						font-size:40px;
+						margin:-25px 0 0 0;
+						}	
+				#fav1area{
+						width:1679px;
+						height:1350px;
+						background:transparent;
+						}	
+				#fav11{
+						width:479px;
+						height:320px;
+						margin:50px 40px;
+						background:linear-gradient(to top, #f3faf2,transparent);
+						border-radius:10px;
+						float:left;
+						}	
+				#fav12{
+						width:300px;
+						height:280px;
+						border-radius:50%;
+						margin:60px 95px;
+						background:transparent;
+						box-shadow: 0px 2px 17px 0px rgba(0,0,0,1);
+						float:left;
+						}
+				#fav12:hover{
+						box-shadow: -8px -7px 19px 1px rgba(0,0,0,1);
+						}		
+				#fav12 img{
+						width:260px;
+						height:260px;
+						margin:20px 20px;
+						border-radius:50%;
+						}
+				#fav12 img:hover{
+						transform:scale(1.1);
+						transition:transform 1s;
+						}	
+				#menu{
+						width:1679px;
+						height:800px;
+						background:transparent;
+						}
+				#menu2{
+						width:1679px;
+						height:630px;
+						background:#f3faf2;
+						float:left;
+						}
+				#menu21{
+						width:459px;
+						height:570px;
+						margin:50px;
+						float:left;		
+						box-shadow: 0px -1px 13px 0px rgba(0,0,0,0.75);
+						}
+				#menu22{
+						width:459px;
+						height:570px;
+						margin:50px;
+						float:left;
+						box-shadow: 0px -1px 13px 0px rgba(0,0,0,0.75);
+						}
+				#menu23{
+						width:459px;
+						height:570px;
+						margin:50px;
+						float:left;
+						box-shadow: 0px -1px 13px 0px rgba(0,0,0,0.75);
+						}
+				#menu2 img{
+						width:100%;
+						height:100%;
+						opacity:0.7;
+						transition:all 3s;
+						}
+				#menu2 img:hover{
+						opacity:1;
+						transform:scale(1.1);
+						box-shadow: 0px 9px 13px 0px rgba(0,0,0,0.75);
+						}
+				#marea{
+						width:1679px;
+						height:800px;
+						background:url(designer.png) no-repeat fixed;
+						background-size:100% 100%;
+						backdrop-filter: blur(50px);
+						}
+				#m1{
+						width:559px;
+						height:800px;
+						background:url(men.jpg);
+						background-size:100% 100%;
+						border-radius: 0 0 50% 0;
+						box-shadow: 7px 8px 17px 5px rgba(0,0,0,0.43);
+						float:left;
+						}
+				#m2{
+						width:300px;
+						height:290px;
+						margin:50px 30px 0 30px;
+						float:left;
+						}
+				#m21{
+						width:260px;
+						height:250px;
+						margin:20px;
+						box-shadow: 20px 0px 41px -3px #33291F inset;
+						border-radius:50%;
+						}
+				#m21 a:link,#m21 a:visited{
+							font:50px bold helvetica;
+							text-decoration:none;
+							color:white;
+							display:block;
+							text-align:center;
+							padding:60px;
+						}
+				#m21:hover{
+						transform:scale(1.1);
+						transition:transform 2s;
+						}
+				#m3{
+						width:300px;
+						height:290px;
+						margin:260px 30px 0 30px;
+						float:left;
+						}
+				#m31{
+						width:260px;
+						height:250px;
+						margin:20px;
+						box-shadow: 20px 0px 41px -3px #33291F inset;
+						border-radius:50%;
+						}
+				#m31 a:link,#m31 a:visited{
+							font:50px bold helvetica;
+							text-decoration:none;
+							color:white;
+							display:block;
+							text-align:center;
+							padding:60px;
+						}
+				#m31:hover{
+						transform:scale(1.1);
+						transition:transform 2s;
+						}
+				#m3:active div{
+						display:block;
+				}
+				#m4{
+						width:300px;
+						height:290px;
+						margin:50px 30px 0 30px;
+						float:left;
+						}
+				#m41{
+						width:260px;
+						height:250px;
+						margin:20px;
+						box-shadow: 20px 0px 41px -3px #33291F inset;
+						border-radius:50%;
+						}
+				#m41 a:link,#m41 a:visited{
+							font:50px bold helvetica;
+							text-decoration:none;
+							color:white;
+							display:block;
+							text-align:center;
+							padding:60px;
+						}
+				#m41:hover{
+						transform:scale(1.1);
+						transition:transform 2s;
+
+						}
+				#m5{
+						width:150px;
+						height:40px;
+						box-shadow: 12px -1px 85px -10px #E47B17;
+						margin:400px 0px 0 200px;
+						float:left;
+						}
+				#m5 a:link,#m5 a:visited{
+							font:30px normal helvetica;
+							text-decoration:none;
+							color:white;
+							display:block;
+							text-align:center;
+						}
+				#m5:hover{
+						transform:scale(1.1);
+						border:solid 5px white;
+						}
+				#boxarea{
+						width:1679px;
+						height:1500px;
+						background:transparent;
+						}
+				#box1{
+						width:899px;
+						height:950px;
+						float:left;
+						}
+				#box11{
+						width:480px;
+						height:950px;
+						float:left;
+						font-size:22px;
+						}
+				#box11 h2{
+						width:480px;
+						font-size:30px;
+						margin:60px 0 0 30px;
+						}
+				#box11 p{
+						width:480px;
+						font-size:22px;
+						margin:20px 0 0 30px;
+						}
+				#box11 a:link,#box11 a:visited{
+							width:220px;
+							height:25px;
+							font:bold 22px arial;
+							color:black;
+							background:transparent;
+							text-decoration:none;
+							margin:40px 0  40px 30px;
+							padding:22px 10px;
+							display:block;
+							text-align:center;
+							border:solid 3px black;
+						}
+				#box11 a:hover{
+							color:white;
+							background:black;
+						}
+				#box12{
+						width:419px;
+						height:500px;
+						margin:75px 0px;
+						float:right;
+						}
+				#box12 h2{
+						width:419px;
+						font-size:30px;
+						margin:0 0 0 30px;
+						}
+				#box12 p{
+						width:419px;
+						font:normal 18px arial;
+						margin:20px 0 0 30px;
+						}
+				#box12 a:link,#box12 a:visited{
+							color:black;
+							margin:40px 0  40px 30px;
+							font-size:20px;
+						}
+				#box12 h1{
+						width:419px;
+						font-size:40px;
+						margin:30px 0 0 30px;
+						}
+				#box2{
+						width:780px;
+						height:800px;
+						float:right;
+						margin:75px 0px;
+						background:url('photo.avif');
+						background-size:100% 100%;
+						}
+				#box3{
+						width:1679px;
+						height:550px;
+						opacity:0.7;
+						}
+				#box3:hover{
+						opacity:1;
+						}
+				#footerarea{
+						width:1679px;
+						height:1060px;
+						background:transparent;
+						}
+				#footerarea h3{
+							text-align:center;
+							font:normal 45px arial;
+							margin:80px 0 120px 0;
+						}
+				#footerarea p:nth-child(3){
+							text-align:center;
+							font:normal 25px arial;
+							margin:40px 0 0 0;
+						}
+				#footerarea p:nth-child(13){
+							text-align:center;
+							font:normal 25px arial;
+							margin:40px 0 0 0;
+						}
+			#footerarea p{
+							text-align:left;
+							font:normal 20px arial;
+							margin:50px 0 0 525px;
+					}
+			#footerarea form{
+						margin:0 0 0 525px;
+						border:solid 5px gray;
+						width:600px;
+					}
+			#footerarea form input{
+						border:0;
+						outline:0;
+						width:100%;
+						height:4%;
+						font-size:20px;
+						padding-left:10px;
+					}
+				#footerarea a:link,#footerarea a:visited{
+							width:350px;
+							height:25px;
+							font:normal 22px arial;
+							color:black;
+							background:transparent;
+							text-decoration:none;
+							margin:40px 0  20px 650px;
+							padding:22px 10px;
+							display:block;
+							text-align:center;
+							border:solid 3px black;
+						}
+				#footerarea a:hover{
+							color:white;
+							background:black;
+						}
+				#footarea{
+						width:1679px;
+						height:450px;
+						background:#094207;
+						}
+				#foot1{
+						width:399px;
+						height:390px;
+						background:transparent;
+						float:left;
+						margin:0 10px 10px 10px;
+						}
+				.fa-facebook{
+						font-size:30px;
+						color:white;
+						margin:0 0 0 15px;
+						}
+				.fa-instagram{
+						font-size:30px;
+						color:white;
+						margin:0 0 0 15px;
+						}
+				#foot2{
+						width:1679px;
+						height:50px;
+						background:#132F0C;
+						float:left;
+						}
+				#foot2 p{
+						text-align:center;
+						color:#4fbd40;
+						}
+				#foot1 h4{
+							color:white;
+							font:normal 25px arial;
+							margin:20px;
+							border-left:solid 5px #4fbd40;
+						}
+				#foot1 h3{
+							color:#4fbd40;
+							font:normal 25px arial;
+							margin:20px;
+						}
+				#foot1 p{
+							color:white;
+							font:normal 20px arial;
+							margin:20px;
+						}
+				#foot1 a:link,#foot1 a:visited{
+							width:300px;
+							height:20px;
+							font:normal 22px arial;
+							color:white;
+							background:transparent;
+							text-decoration:none;
+							margin:0;
+							padding:10px;
+							display:block;
+							text-align:center;
+							border:solid 3px #4fbd40;
+						}
+				#foot1 a:hover{
+							color:white;
+							background:green;
+						}
+				#foot1 p:hover{
+							color:#4fbd40;
+						}
+		</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<div id="mainarea">
+			<div id="menuarea">
+				<div id="toparea">
+					<div id="topleft">
+						<ul>
+							<li>
+								<a href="ft.html">HOME</a>
+							</li>
+							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="#menu">MENU</a></li>
+							<li><a href="events.html">EVENTS</a></li>
+							<li><a href="#footerarea">CONTACT</a></li>
+						</ul>
+					</div>
+					<div id="topright">
+							<a href="reserve.html">RESERVE NOW</a>
+					</div>
+				</div>
+				<h2>SPORTS BRASSERIE</h2>
+				<p>LEGENDARY<br>ATMOSPHERE</p>
+			</div>
+			<div id="slidearea">
+				<div id="slide1">
+				</div>
+				<div id="slide2">
+					<h1><span id="colored-line">Dining</span><br> Under the ForestretranT</h1>
+					<h2>The unique home away from home</h2>
+					<p>Tucked away in a secluded clearing, the Whispering 
+						Woods Restaurant offered a tranquil escape for
+ 						couples seeking a romantic dining experience.
+ 						Surrounded by towering trees and soft, ethereal
+ 						lighting, a single table beckoned, adorned with fine
+ 						china and a delicate floral arrangement. As they sat
+ 						down, the gentle rustle of leaves and chirping of 
+						crickets serenaded the couple, savoring each bite of
+				 		their exquisite meal in peaceful harmony with nature.</p>
+				</div>
+			</div>
+			<div id="darea">
+				<h1><u> Unique Experience</u></h1>
+				<div id="d1">
+					<div class="details">
+						<p>"<span id="colored-line">Toasting to memories</span>, and making new ones, amidst exquisite taste and warm company"</p>
+					</div>
+				</div>
+				<div id="d2">
+					<div class="details">
+						<p>"<span id="colored-line">Tasting the sweetness of love</span>, in every dish."</p>
+					</div>
+				</div>
+			</div>
+			<div id="favarea">
+				<div id="fav1area">
+					<div id="fav11">
+						<h2>BREAKFAST</h2>
+						<div id="fav12">
+							<img src="break.jpg">
+						</div>
+					</div>
+					<div id="fav11">
+						<div id="fav12">
+							<img src="break1.jpg">
+						</div>
+					</div>
+					<div id="fav11">
+						<div id="fav12">
+							<img src="break2.jpg">
+						</div>
+					</div>
+					<div id="fav11">
+						<h2>LUNCH</h2>
+						<div id="fav12">
+							<img src="lunch.jpg">
+						</div>
+					</div>
+					<div id="fav11">
+						<div id="fav12">
+							<img src="lunch2.jpg">
+						</div>
+					</div>
+					<div id="fav11">
+						<div id="fav12">
+							<img src="lunch1.jpg">
+						</div>
+					</div>					
+					<div id="fav11">
+						<h2>SPECIAL DRINK</h2>
+						<div id="fav12">
+							<img src="drink.jpg">
+						</div>
+					</div>
+					<div id="fav11">
+						<div id="fav12">
+							<img src="drink1.jpg">
+						</div>
+					</div>
+					<div id="fav11">
+						<div id="fav12">
+							<img src="drink2.jpg">
+						</div>
+					</div>
+				</div>
+				<a href="#menu2"><img src="menu.png"></a>
+			</div>
+			<div id="menu">
+				<div id="menu2">
+					<div id="menu21">
+						<img src="mbreakfast.png">
+					</div>
+					<div id="menu22">
+						<img src="mlunch.jpg">
+					</div>
+					<div id="menu23">
+						<img src="mdinner.jpg">
+					</div>
+				</div>
+			</div>
+			<div id="marea">
+				<div id="m1">
+				</div>				
+				<div id="m2">
+					<div id="m21">
+					<a href="reserve.html">Order Now</a>
+					</div>
+				</div>
+				<div id="m3">
+					<div id="m31">
+					<a href="reserve.html">Book A Table</a>
+					</div>
+				</div>
+				<div id="m4">
+					<div id="m41">
+					<a href="reserve.html">Order Online</a>
+					</div>
+				</div>
+				<div id="m5">
+					<a href="reserve.html">Gift Card</a>
+				</div>
+			</div>
+			<div id="boxarea">
+				<div id="box1">
+					<div id="box11">
+						<h2>Location & Hours</h2>
+						<p>2132 E 7th Place,<br>
+						Los Angeles, CA 90021on Google Maps<br>
+						Call Damian by phone at+1 (213) 270-0178</p>
+						<a href="#box3">GET DIRECTIONS</a>
+						<p>TUESDAY<br>
+						Closed<br>
+						MONDAY & WEDNESDAY <br>& THURSDAY
+						5:30pm to 9pm<br>
+						FRIDAY<br>
+						5:30pm to 10pm<br>
+						SATURDAY<br>
+						5pm to 10pm<br>
+						SUNDAY<br>
+						5pm to 9pm</p>
+						<a href="reserve.html">RESERVATIONS</a>
+					</div>
+					<div id="box12">
+						<h2>CONTACT</h2>
+						<p>General Inquires</p>
+						<a href="#">info@forestrent.com</a>
+						<p>Media & Press</p>
+						<a href="#">press@casamata.com</a>
+						<p>Careers</p>
+						<a href="#">careers@forestrent.com</a>
+						<h1> FB IG</h1>
+					</div>
+				</div>
+				<div id="box2">
+				</div>
+				<div id="box3">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.4055764592717!2d-118.2289512!3d34.033466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c70edfd6917f%3A0xf0e60340960841d0!2sDamian!5e0!3m2!1sen!2sin!4v1725453854902!5m2!1sen!2sin" width="1679px" height="550px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+			<div id="footerarea">
+				<h3>CONTACT</h3>
+				<a href="#">For all Media Inquires link here</a>
+				<p>Send us a message and we’ll get back to you as soon as possible. You can also reach us by phone at 212.980.4796. Looking forward to hearing from you.</p>
+				<p>Name-Required:</p>
+				<form>
+					<input type="text" placeholder="Your Name">
+				</form>
+				<p>Email-Required:</p>
+				<form>
+					<input type="text" placeholder="Your Email">
+				</form>
+				<p>Phone Number-Required:</p>
+				<form>
+					<input type="text" placeholder="Your Phone Number">
+				</form>
+				<p>Your Message-Required:</p>
+				<form>
+					<input type="text" placeholder="Text">
+				</form>
+				<a href="#">Send</a>
+				<p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+			</div>
+			<div id="footarea">
+				<div id="foot1">
+					<h3>SITEMAP</h3>
+					<p>About</p>
+					<p>Menu</p>
+					<p>News</p>
+					<p>Privacy Policy</p>
+					<p>Terms of Service</p>
+					<p>Virtual Tour</p>
+					<p>Reservation Policy</p>
+				</div>
+				<div id="foot1">
+					<h3>LOCATION</h3>
+					<p>Upper Level,
+					Overseas Passenger Terminal,
+					The Rocks, Sydney 2000
+					phone: 02 9251 5600</p>
+					<h3>Opening Hours</h3>
+					<p>LUNCH
+					Saturday and Sunday
+					Reservations from 12pm to 1.30pm</p>
+					<p>DINNER
+					Wednesday to Sunday
+					Reservations from 6pm to 8.45pm</p>
+				</div>
+				<div id="foot1">
+					<h3>Reservations</h3>
+					<a href="reserve.html">MAKE A RESERVATION</a>
+					<p>We acknowledge the Traditional Custodians of this land upon which Quay sits, the Gadigal of the Eora Nation. We recognise their continuing connection and unique cultural and spiritual relationship to the land, water and community. We pay our deepest respects to them and their culture, and to Elders, past, present and emerging.</p>
+					<p>Tel : 02 9251 5600</p>
+				</div>
+				<div id="foot1">
+					<h3>Contact Us</h3>
+					<p>Call: +7254059174</p>
+					<p>Mail: support@forestrent.in</p>
+					<h3>SOCIAL</h3>
+					<i class="fa-brands fa-facebook"></i>
+					<i class="fa-brands fa-instagram"></i>
+				</div>
+				<div id="foot2">
+					<p>© 2024 Jungle Restaurant. All Rights Reserved.
+						Site by Biz Glows</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

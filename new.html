@@ -1,0 +1,1135 @@
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			body{
+				margin:0px;
+				padding:0px;
+			}
+			#toparea{
+					width:1350px;
+					height:50px;
+					background:#270056;
+			}
+			#toparea p{
+					font:normal 18px arial;
+					color:white;
+					margin:12px 0 0 10px;
+					float:left;
+			}
+			.fa-location-dot{
+					font-size:20px;
+					color:white;
+					float:left;
+					margin:12px 0 0 40px;
+			}
+			#mainarea{
+					width:1350px;
+					height:80px;
+					background:white;
+					position:sticky;
+					top:0;
+					z-index:1000;
+			}
+			#menuarea{
+					width:320px;
+					height:60px;
+					background:transparent;
+					float:left;
+			}
+			#menuarea img{
+					width:55px;
+					height:55px;
+					margin:7px 0 0 60px;
+					float:left;
+			}
+			#menuarea h2{
+					margin:15px 0 0 0px;
+					color:#270056;				
+			}
+			#menuarea p{
+					font:normal 15px arial;
+					margin:0;
+					color:gray;
+			}
+			#menu{
+					width:550px;
+					height:60px;
+					float:left;
+					background:transparent;
+			}
+				#menu ul{
+						list-style:none;
+						margin:15px 0px 0 0px;
+						padding:0px;
+						}
+				#menu ul li{
+						float:left;
+						}
+				#menu ul li a:link,#menu ul li a:visited{
+							color:#270056;
+							font-size:17px;
+							background:transparent;
+							text-decoration:none;
+							padding:8px;
+							display:block;
+							text-align:center;
+						}
+				#menu ul li a:hover{
+							border-bottom:solid 2px #270056;
+						}
+				#menu ul li ul{
+							display:none;
+						}
+				#menu ul li:hover ul{
+							display:block;
+							position:absolute;
+							z-index:1000;
+						}
+				#menu ul li:hover ul li{
+							float:none;		
+						}
+				#number{
+						width:480px;
+						height:60px;
+						background:transparent;
+						float:left;
+				}
+				.fa-phone-volume{
+					font-size:18px;
+					color:#E74E06;
+					float:left;
+					margin:23px 5px 0 30px;
+				}
+				#number p{
+						color:#270056;
+						margin:15px 0 0 5px;
+							float:left;
+				}
+				#number a:link,#number a:visited{
+							width:120px;
+							height:20px;
+							font:normal 18px arial;
+							color:white;
+							background:#E74E06;
+							text-decoration:none;
+							margin:17px 0 0 80px;
+							padding:5px;
+							display:block;
+							text-align:center;
+							border:solid 1px #270056;
+							float:left;
+						}
+				#number a:hover{
+							color:white;
+							background:#270056;
+						}
+			#background{
+					width:1350px;
+					height:510px;
+					background:url(bg.jpg) no-repeat;
+					background-size:100% 100%;
+					opacity:0.9;
+			}
+			#back{
+					width:800px;
+					height:510px;
+					background:transparent;
+					background:linear-gradient(to right,black,transparent);
+			}
+				#back a:link,#back a:visited{
+							width:200px;
+							height:20px;
+							font:normal 18px arial;
+							color:white;
+							background:#E74E06;
+							text-decoration:none;
+							margin:100px 0 0 60px;
+							padding:5px;
+							display:block;
+							text-align:center;
+							float:left;
+						}
+				#back a:hover{
+							color:white;
+							background:#270056;
+						}
+				#back h1{
+							color:white;
+							float:left;
+							font-size:50px;
+							margin:10px 0 0 60px;		
+						}
+				#back p{
+							color:white;
+							float:left;
+							margin:10px 0 0 60px;		
+						}
+				#second{
+						width:1350px;
+						height:620px;
+						background:url(yard.jpg) fixed;
+						background-size:100% 100%;
+				}
+				#second1{
+						width:515px;
+						height:460px;
+						margin:40px 80px 80px 80px;
+						background:url(mf.jpg) no-repeat;
+						background-size:100% 100%;
+						float:left;
+						border-radius:5px;
+				}
+				#second1 h2{
+						width:120px;
+						height:70px;
+						background:#E74E06;
+						color:white;
+						font:bold 30px arial;
+						text-align:center;
+						margin:50px -60px 0px 0px;
+						padding:10px 0 0 0;
+						float:right;
+						border-radius:8px;
+				}
+				#second1 img{
+						width:250px;
+						height:200px;
+						background-size:100% 100%;
+						margin:300px -120px -10px 0px;
+						float:right;
+						border-radius:5px;
+						border:solid 15px white;
+				}
+				#second2{
+						width:675px;
+						height:620px;
+						background:transparent;
+						float:left;
+				}
+				#second2 h2{
+						font:bold 40px arial;
+						margin:40px 0px 10px 40px;
+				}
+				#second2 p{
+						margin:0px 0 10px 40px;
+						font:normal 15px arial;
+				}
+				#colored-line{
+					color:#E74E06;
+				}
+				#second2 img{
+						width:40px;
+						height:40px;
+						margin:20px 0 0px 40px;
+						color:#E74E06;
+						float:left;
+				}
+				#second2 h5{
+						font:normal 20px arial;
+						margin:25px 45px 35px 15px;
+						float:left;
+				}
+				#second ul li{
+					position:relative;
+					list-style:none;
+					padding:0 0 15px 0;
+					margin:0 0 0 20px;
+					font-size:25px;
+				}
+				#second ul li:before{
+					position:absolute;
+					content:"\2713";
+					color:#270254;
+					float:left;
+					left:-25px;
+				}
+				#second a:link,#second a:visited{
+							width:120px;
+							height:20px;
+							font:normal 18px arial;
+							color:white;
+							background:#E74E06;
+							text-decoration:none;
+							margin:17px 0 0 40px;
+							padding:5px;
+							display:block;
+							text-align:center;
+							border:solid 1px #270056;
+							float:left;
+						}
+				#second a:hover{
+							color:white;
+							background:#270056;
+						}
+				#thirdarea{
+						width:1350px;
+						height:800px;
+						background:linear-gradient(to top,#686869,transparent);
+				}
+				#thirdtop{
+						width:1300px;
+						height:100px;
+						background:transparent;
+						margin:0 25px;
+				}
+				#thirdtop h1{
+						width:900px;
+						height:34px;
+						font:bold 35px arial;
+						margin:35px 0px 0px 60px;
+						float:left;
+				}
+				#thirdtop a:link,#thirdtop a:visited{
+							width:180px;
+							height:20px;
+							font:normal 18px arial;
+							color:white;
+							background:#E74E06;
+							text-decoration:none;
+							margin:35px 20px 0 0;
+							padding:5px;
+							display:block;
+							text-align:center;
+							border:solid 1px #270056;
+							float:right;
+						}
+				#thirdtop a:hover{
+							color:white;
+							background:#270056;
+						}
+				#third{
+						width:1300px;
+						height:620px;
+						background:transparent;
+						margin:0 25px;
+					}
+				.thirdbox1{
+						width:373px;
+						height:290px;
+						background: white;
+						border-radius:10px;
+						margin:10px 30px;
+						float:left;
+					}
+				.thirdbox1 img{
+						width:90px;
+						heigth:90px;
+						margin:15px 0 15px 150px;
+					}
+				.thirdbox1 h5{
+						font-size:25px; 
+						margin:0 0 0 60px;
+					}
+				.thirdbox1 p{
+						color:gray;
+						font-size:20px;
+						text-align:center;
+						line-height:25px;
+						margin:5px 10px;
+					}
+			.fa-circle-chevron-right:first-child{
+					font-size:40px;
+					color:#E74E06;
+					margin:20px 160px;
+					}
+				#fourtharea{
+						width:1350px;
+						height:620px;
+						background:white;
+				}
+				#fourth1{
+						width:480px;
+						height:540px;
+						background:url(group.jpeg);
+						background-size:100% 100%;
+						margin:40px 60px;
+						float:left;
+				}
+				#fourth2{
+						width:750px;
+						height:620px;
+						background:transparent;
+						float:left;
+				}
+				#fourth2 h1{
+						font-size:40px;
+						margin:40px 0 0 60px;
+				}
+				#fourth2 h4{
+						font-size:20px;
+						margin:40px 520px 0 0;
+						text:align:left;
+						float:right;
+				}
+				#fourth2 p{
+						color:gray;
+						margin:0 260px 0 0;
+						float:right;
+				}
+				.fcircle{
+						width:50px;
+						height:50px;
+						background:#E74E06;
+						border-radius:50%;
+						margin:50px 0 0 60px;
+				}
+				.fcircle img{
+						width:40px;
+						height:40px;
+						margin:5px;
+				}
+				#fourth2 a:link,#fourth2 a:visited{
+							width:120px;
+							height:20px;
+							font:normal 18px arial;
+							color:white;
+							background:#E74E06;
+							text-decoration:none;
+							margin:40px 0 0 60px;
+							padding:5px;
+							display:block;
+							text-align:center;
+							border:solid 1px #270056;
+						}
+				#fourth2 a:hover{
+							color:white;
+							background:#270056;
+						}
+				#fivearea{
+						width:1350px;
+						height:620px;
+						background:white;
+				}
+				#fivearea1{
+						width:1013px;
+						height:620px;
+						background:linear-gradient(to top,#686869,transparent);
+						float:right;
+				}
+				#five11{
+						width:540px;
+						height:500px;
+						background:#E74E06;
+						margin:25px 0 0 -275px;
+						float:left;
+				}
+				#five12{
+						width:530px;
+						height:500px;
+						background:url(female.jpg);
+						background-size:100% 100%;
+						margin:30px 0 0 -40px;
+				}
+				#five2{
+						width:740px;
+						height:620px;
+						background:transparent;
+						float:right;
+				}
+				#five2 h1{
+						font-size:40px;
+						margin:50px 0 0 60px;
+				}
+			#five2 form{
+						margin:30px 0 0 60px;
+						width:300px;
+						height:40px;
+					}
+			#five2 form:nth-child(2n){
+						margin:30px 55px 0 0;
+						width:300px;
+						height:40px;
+						float:right;
+					}
+			#five2 form:nth-child(6){
+						margin:30px 55px 0 0px;
+						width:625px;
+						height:120px;
+					}
+			#five2 form input{
+						border:0;
+						border-radius:10px;
+						width:100%;
+						height:100%;
+						font-size:15px;
+						padding-left:10px;
+					}
+				#five2 a:link,#five2 a:visited{
+							width:120px;
+							height:20px;
+							font:normal 18px arial;
+							color:white;
+							background:#E74E06;
+							text-decoration:none;
+							margin:190px 0 0 60px;
+							padding:5px;
+							display:block;
+							text-align:center;
+							border:solid 1px #270056;
+							border-radius:10px;
+						}
+				#five2 a:hover{
+							color:white;
+							background:#270056;
+						}
+				#sixarea{
+						width:1350px;
+						height:480px;
+						background:white;
+				}
+				#sixarea h1{
+						font-size:40px;
+						padding:10px 0 0 500px;
+				}
+				.six{
+						width:277px;
+						height:300px;
+						margin:30px;
+						float:left;
+						position:relative;
+						overflow:hidden;
+				}
+				.details{
+						position:absolute;
+						bottom:-100px;
+						color:white;
+						text-align:center;
+						width:100%;
+						padding:50px 0;
+						background:linear-gradient(to top,black,transparent);
+						transition:all 2s;
+						}
+				.six:hover .details{
+						bottom:0;
+						}
+				.details p{
+						font-size:23px;
+						margin:20px 0 0 0;
+						}
+				.six img{
+						width:277px;
+						height:300px;
+				}
+			.fa-square-instagram{
+					font-size:22px;
+					color:#E74E06;
+					margin:5px 0 0 0;
+				}
+			.fa-square-twitter{
+					font-size:22px;
+					color:#E74E06;
+					margin:5px 0 0 0;
+				}
+				#seven{
+						width:1350px;
+						height:480px;
+						background:url(wave.jpg) no-repeat fixed;
+						background-size:100% 100%;
+				}
+				#seven h1{
+						font-size:40px;
+						padding:10px 0 0 500px;
+				}
+				.sevenarea{
+						width:390px;
+						height:320px;
+						background:white;
+						margin:30px;
+						float:left;
+				}
+				.sevenarea img{
+						width:60px;
+						height:60px;
+						margin:50px 0 0 20px;
+						border-radius:50%;
+						float:left;
+				}
+				.sevenarea img:nth-child(4){
+						width:40px;
+						height:40px;
+						margin:-30px 20px 0 0;
+						float:right;
+				}
+				.sevenarea h5{
+						color:#E74E06;
+						font-size:18px;
+						float:left;
+						margin:60px 0 0 60px;
+				}
+				.sevenarea h6{
+						color:gray;
+						font-size:15px;
+						margin:90px 0 0 150px;
+				}
+				.sevenarea p{
+						color:gray;
+						font-size:20px;
+						text-align:justify;
+						margin:40px 20px 0 20px;
+						float:left;
+				}
+				#eight{
+						width:1350px;
+						height:550px;
+						background:white;
+				}
+				#eight h1{
+						font-size:40px;
+						padding:10px 0 0 30px;
+				}
+				.eightarea{
+						width:390px;
+						height:320px;
+						background:white;
+						margin:0 30px;
+						float:left;
+						overflow:hidden;
+				}
+				.eightarea img{
+						width:100%;
+						height:100%;
+				}
+				.eightarea img:hover{
+					transform:scale(1.1,1.1);	
+				}
+			.eight1{
+					width:390px;
+					height:140px;
+					background:transparent;
+					margin:0px 30px;
+					float:left;
+				}
+			.eight1 hr{
+					width:390px;
+					float:left;
+					margin:0px 0px;
+				}
+				.eight1 p{
+						font-size:22px;
+						color:#270056;
+						margin:10px 0 10px 0px;
+				}
+				.eight1 h5{
+						font-size:17px;
+						color:#270056;
+						margin:0px 0px;
+				}
+				.eight1 h6{
+						font-size:18px;
+						color:#E74E06;
+						margin:20px 0px;
+				}
+			.fa-file-lines{
+					font-size:20px;
+					color:#E74E06;
+					margin:-40px 90px;
+					}
+			#nine{
+					width:1350px;
+					height:200px;
+					background:#E74E06;
+			}
+			#ninearea1{
+					width:675px;
+					height:200px;
+					background:transparent;
+					float:left;
+			}
+			#ninearea1 h1{
+					font-size:45px;
+					color:white;
+					margin:50px 0 10px 120px;
+			}
+			#ninearea1 p{
+					font-size:20px;
+					color:white;
+					margin:0px 50px;
+			}
+			#ninearea2{
+					width:675px;
+					height:200px;
+					background:transparent;
+					float:left;
+			}
+			#ninearea2 form{
+						margin:75px 0 0 35px;
+						width:300px;
+						height:40px;
+						float:left;
+					}
+			#ninearea2 form input{
+						border:0;
+						border-radius:10px;
+						width:100%;
+						height:100%;
+						font-size:15px;
+						padding-left:10px;
+					}
+				#ninearea2 a:link,#ninearea2 a:visited{
+							width:180px;
+							height:20px;
+							font:normal 18px arial;
+							color:white;
+							background:#270056;
+							text-decoration:none;
+							margin:75px 0 0 25px;
+							padding:8px;
+							float:left;
+							display:block;
+							text-align:center;
+							border:solid 2px black;
+							border-radius:10px;
+						}
+				#ninearea2 a:hover{
+							box-shadow: 6px 5px 28px 0px rgba(0,0,0,0.75);
+						}
+			#ten{
+					width:1350px;
+					height:350px;
+					background:yellow;
+			}
+			#tenbox1{
+					width:337px;
+					height:310px;
+					background:white;
+					float:left;
+			}
+			#tenbox1 img{
+					width:55px;
+					height:55px;
+					margin:40px 0 0 60px;
+					float:left;
+			}
+			#tenbox1 h2{
+					margin:48px 0 0 0px;
+					color:#270056;				
+			}
+			#tenbox1 p{
+					font:normal 15px arial;
+					margin:0;
+					color:gray;
+			}
+			#tenbox1 p:nth-child(4){
+					font:normal 17px arial;
+					text-align:justify;
+					margin:40px 30px 0 30px;
+					line-height:22px;
+					color:#270056;
+			}
+			.fa-square-google-plus{
+					font-size:22px;
+					color:#E74E06;
+					margin:15px 0 0 100px;
+				}
+			.fa-id-card{
+					font-size:22px;
+					color:#E74E06;
+					margin:15px 0 0 10px;
+				}
+			.fa-square-facebook{
+					font-size:22px;
+					color:#E74E06;
+					margin:15px 0 0 10px;
+				}
+			.fa-square-whatsapp{
+					font-size:22px;
+					color:#E74E06;
+					margin:15px 0 0 10px;
+				}
+			#tenbox2{
+					width:337px;
+					height:310px;
+					background:white;
+					float:left;
+			}
+			#tenbox2 h5{
+					font-size:25px;
+					color:#E74E06;
+					margin:48px 0 10px 40px;
+			}
+			.fa-arrow-right-from-bracket{
+					font-size:22px;
+					color:#E74E06;
+					margin:0 10px 0 0;
+					float:left;
+				}
+				#tenbox2 ul li a:link,#tenbox2 ul li a:visited{
+							width:125px;
+							color:#270056;
+							font-size:17px;
+							background:transparent;
+							text-decoration:none;
+							margin:12px 0px 0 0px;		
+							display:block;
+						}
+			#tenbox3{
+					width:337px;
+					height:310px;
+					background:white;
+					float:left;
+			}
+			#tenbox3 h5{
+					font-size:25px;
+					color:#E74E06;
+					margin:48px 0 10px 40px;
+			}
+				#tenbox3 ul li a:link,#tenbox3 ul li a:visited{
+							width:220px;
+							color:#270056;
+							font-size:17px;
+							background:transparent;
+							text-decoration:none;
+							margin:12px 0px 0 0px;		
+							display:block;
+						}
+			#tenbox4{
+					width:337px;
+					height:310px;
+					background:white;
+					float:left;
+			}
+			#tenbox4 h5{
+					font-size:25px;
+					color:#E74E06;
+					margin:48px 0 20px 40px;
+			}
+			#tenbox4 p{
+					font:normal 15px arial;
+					margin:30px 0 30px 10px;
+					color:#270056;
+			}
+			.fa-square-phone{
+					font-size:22px;
+					color:#E74E06;
+					margin:10px 10px 0px 40px;
+					float:left;
+				}
+			.fa-envelope{
+					font-size:22px;
+					color:#E74E06;
+					margin:0px 10px 0 40px;
+					float:left;
+				}
+			.fa-location-crosshairs{
+					font-size:22px;
+					color:#E74E06;
+					margin:0px 10px 0 40px;
+					float:left;
+				}
+			#tenbox5{
+					width:1350px;
+					height:40px;
+					background:#270056;
+					float:left;
+			}
+			#tenbox5 p{
+					color:white;
+					text-align:center;
+					margin:10px auto;
+			}
+		</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<div id="toparea">
+			<a href=""><i class="fa-sharp fa-solid fa-location-dot"></i></a>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+		</div>
+		<div id="mainarea">
+			<div id="menuarea">
+				<img src="pc2.jpg">
+				<h2>COMPUTER</h2>
+				<p>Service & Repair</p>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="">HOME</a></li>
+					<li><a href="">ABOUT</a></li>
+					<li><a href="">SOLUTION</a></li>
+					<li><a href="">WORK WITH US</a></li>
+					<li><a href="">CONTACT US</a></li>
+				</ul>
+			</div>
+			<div id="number">
+				<i class="fa-sharp fa-solid fa-phone-volume"></i>
+				<p>Call Us<br>91+7254059174</p>
+				<a href="">Get In Touch</a>
+			</div>
+		</div>
+		<div id="background">
+			<div id="back">
+				<a href="">5K+ Trusted our clients</a>
+				<h1>Empower your business<br>journey with it expertise</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Iste fugit consequuntur laboriosam<br> 
+					quonemo ,nesciunt similique expedita odio soluta saepe. </p>
+				<a href="">Get In Touch</a>
+			</div>
+		</div>
+		<div id="second">
+			<div id="second1">
+				<h2>20+<br>Years</h2>
+				<img src="pro3.jpg">
+			</div>
+			<div id="second2">
+				<h2><span id="colored-line">We Work For</span> Your Since 1980 ,<br>Industrial Around</h2>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit sint<br>
+					necessitatibus velit, id nulla ex eius architecto fugit dolor.</p>
+				<img src="bicon.png">
+				<h5>Business Strategy</h5>
+				<img src="ticon.png">
+				<h5>Tech Strategy</h5>
+				<ul>
+					<li>Profesional team member</li>
+					<li>Awards winning it solution company</li>
+					<li>Dedicated tech services</li>
+				</ul>
+				<a href="">Read More</a>
+			</div>
+		</div>
+		<div id="thirdarea">
+			<div id="thirdtop">
+				<h1><span id="colored-line">Explore</span> Large Scale Projects </h1>
+				<a href="">Explore Our Services</a>
+			</div>
+			<div id="third">
+				<div class="thirdbox1">
+						<img src="ca.gif">
+						<h5>Computer Architecture</h5>
+						<p>Lorem ipsum dolor sit amet consctetur<br> adipisicing elit.Libero,quos.</p>
+						<a href=""><i class="fa-solid fa-circle-chevron-right"></i></a>
+				</div>
+				<div class="thirdbox1">
+						<img src="it.gif">
+						<h5>IT / Technical Support</h5>
+						<p>Lorem ipsum dolor sit amet consctetur<br> adipisicing elit.Libero,quos.</p>
+						<a href=""><i class="fa-solid fa-circle-chevron-right"></i></a>
+
+				</div>
+				<div class="thirdbox1">
+						<img src="cmp.gif">
+						<h5>Computer Engineering</h5>
+						<p>Lorem ipsum dolor sit amet consctetur<br> adipisicing elit.Libero,quos.</p>
+						<a href=""><i class="fa-solid fa-circle-chevron-right"></i></a>
+				</div>
+				<div class="thirdbox1">
+						<img src="hard.gif">
+						<h5>Computer Hardware</h5>
+						<p>Lorem ipsum dolor sit amet consctetur<br> adipisicing elit.Libero,quos.</p>
+						<a href=""><i class="fa-solid fa-circle-chevron-right"></i></a>
+				</div>
+				<div class="thirdbox1">
+						<img src="trouble.gif">
+						<h5>IT Troubleshooting</h5>
+						<p>Lorem ipsum dolor sit amet consctetur<br> adipisicing elit.Libero,quos.</p>
+						<a href=""><i class="fa-solid fa-circle-chevron-right"></i></a>
+				</div>
+				<div class="thirdbox1">
+						<img src="elect.gif">
+						<h5>Electrical Engineering</h5>
+						<p>Lorem ipsum dolor sit amet consctetur<br> adipisicing elit.Libero,quos.</p>
+						<a href=""><i class="fa-solid fa-circle-chevron-right"></i></a>
+				</div>
+			</div>
+		</div>
+		<div id="fourtharea">
+			<div id="fourth1">
+			</div>
+			<div id="fourth2">
+				<h1><span id="colored-line">Truly Trusted</span> It Bussiness<br> Solution</h1>
+				<h4>Our Mission</h4>
+				<p>Lorem ipsum dolor sit amet consctetur adipisicing elit.<br>Numquom nemo operiam nisi reiciendis valuptate culpa!</p>
+				<div class="fcircle">
+					<img src="mission.png">
+				</div>
+				<h4>Our Vission</h4>
+				<p>Lorem ipsum dolor sit amet consctetur adipisicing elit.<br>Numquom nemo operiam nisi reiciendis valuptate culpa!</p>
+				<div class="fcircle">
+					<img src="vission.png">
+				</div>
+				<h4>Our Value</h4>
+				<p>Lorem ipsum dolor sit amet consctetur adipisicing elit.<br>Numquom nemo operiam nisi reiciendis valuptate culpa!</p>
+				<div class="fcircle">
+					<img src="value.png">
+				</div>
+				<a href="">Read More</a>
+			</div>
+		</div>
+		<div id="fivearea">
+			<div id="fivearea1">
+				<div id="five11">
+					<div id="five12">
+					</div>
+					<div id="five13">
+					</div>
+				</div>
+				<div id="five2">
+					<h1>Lets Work<span id="colored-line"> Together</span></h1>
+					<form>
+						<input type="text" placeholder="Your Email">
+					</form>
+					<form>
+						<input type="text" placeholder="Your Name">
+					</form>
+					<form>
+						<input type="text" placeholder="Subject">
+					</form>
+					<form>
+						<input type="text" placeholder="Your Phone">
+					</form>
+					<form>
+						<input type="text" placeholder="Your Message">
+					</form>
+					<a href="">Submit</a>
+				</div>
+			</div>
+		</div>
+		<div id="sixarea">
+			<h1><span id="colored-line">Meet</span> Our Expert Team</h1>
+			<div class="six">
+				<img src="p1.jpg"/>
+				<div class="details">
+					<p>Aravind Joshi</p>
+					<a href=""><i class="fa-brands fa-square-instagram"></i></a>
+					<a href=""><i class="fa-brands fa-square-twitter"></i></a>
+				</div>
+			</div>
+			<div class="six">
+				<div class="details">
+					<p>Geetha Kannan</p>
+					<a href=""><i class="fa-brands fa-square-instagram"></i></a>
+					<a href=""><i class="fa-brands fa-square-twitter"></i></a>
+				</div>
+				<img src="p2.jpg"/>
+			</div>
+			<div class="six">
+				<div class="details">
+					<p>Avinash Kak</p>
+					<a href=""><i class="fa-brands fa-square-instagram"></i></a>
+					<a href=""><i class="fa-brands fa-square-twitter"></i></a>
+				</div>
+				<img src="p3.jpg"/>
+			</div>
+			<div class="six">
+				<div class="details">
+					<p>Meenakshi Agarwal</p>
+					<a href=""><i class="fa-brands fa-square-instagram"></i></a>
+					<a href=""><i class="fa-brands fa-square-twitter"></i></a>
+				</div>
+				<img src="p4.jpg"/>
+			</div>
+		</div>
+		<div id="seven">
+			<h1><span id="colored-line">What People</span> Say's</h1>
+			<div class="sevenarea">
+				<img src="public1.jpeg"/>
+				<h5>Vivek Ronak</h5>
+				<h6>Ui DEsigner</h6>
+				<img src="inverted.png"/>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ratione quis quisam, valuptate laudantium eveniet quo rerum reiciendis animi.</p>
+
+			</div>
+			<div class="sevenarea">
+				<img src="public2.png"/>
+				<h5>Gourav Paswan</h5>
+				<h6>Ui DEsigner</h6>
+				<img src="inverted.png"/>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ratione quis quisam, valuptate laudantium eveniet quo rerum reiciendis animi.</p>
+
+			</div>
+			<div class="sevenarea">
+				<img src="public3.jpeg"/>
+				<h5>Rashi Mahata</h5>
+				<h6>Ui DEsigner</h6>
+				<img src="inverted.png"/>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ratione quis quisam, valuptate laudantium eveniet quo rerum reiciendis animi.</p>
+			</div>
+		</div>
+		<div id="eight">
+			<h1><span id="colored-line">Read Our</span> New's & Articles</h1>
+			<div class="eightarea">
+				<img src="ariticle1.jpeg"/>
+			</div>
+			<div class="eightarea">
+				<img src="ariticle2.jpg"/>
+			</div>
+			<div class="eightarea">
+				<img src="ariticle3.jpeg"/>
+			</div>
+			<div class="eight1">
+				<h5>19 July 2024</h5>
+				<p>A Complete Guide to Technology<br> Projects</p><hr>
+				<h6>Read More</h6>
+				<a href=""><i class="fa-regular fa-file-lines"></i></a>
+			</div>
+			<div class="eight1">
+				<h5>20 July 2024</h5>
+				<p>A Complete Guide to Technology<br> Projects</p><hr>
+				<h6>Read More</h6>
+				<a href=""><i class="fa-regular fa-file-lines"></i></a>
+			</div>
+			<div class="eight1">
+				<h5>21 July 2024</h5>
+				<p>A Complete Guide to Technology<br> Projects</p><hr>
+				<h6>Read More</h6>
+				<a href=""><i class="fa-regular fa-file-lines"></i></a>
+			</div>
+		</div>
+		<div id="nine">
+			<div id="ninearea1">
+				<h1>Join Our Newsletter</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Optio, nihil.</p>
+			</div>
+			<div id="ninearea2">
+				<form>
+					<input type="text" placeholder="E-mail">
+				</form>
+				<a href="">Submit</a>
+			</div>
+		</div>
+		<div id="ten">
+			<div id="tenbox1">
+				<img src="pc2.jpg">
+				<h2>COMPUTER</h2>
+				<p>Service & Repair</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Minus atque vel tempore enim nisi delectus?</p>
+				<a href=""><i class="fa-brands fa-square-google-plus"></i></a>
+				<a href=""><i class="fa-solid fa-id-card"></i></a>
+				<a href=""><i class="fa-brands fa-square-facebook"></i></a>
+				<a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+			</div>
+			<div id="tenbox2">
+				<h5>Quick Links</h5>
+				<ul type="none">
+					<li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="">Home</a></li>
+					<li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="">About</a></li>
+					<li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="">Services</a></li>
+					<li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="">Explore US</a></li>
+					<li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="">Blogs</a></li>
+				</ul>
+			</div>
+			<div id="tenbox3">
+				<h5>Quick Links</h5>
+				<ul type="none">
+					<li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="">Computer Architecture</a></li>
+					<li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="">Computer Engineering</a></li>
+					<li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="">Computer Hardware</a></li>
+					<li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="">IT Troubleshooting</a></li>
+					<li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="">Electrical Engineering</a></li>
+				</ul>
+			</div>
+			<div id="tenbox4">
+				<h5>Company details</h5>
+				<a href=""><i class="fa-solid fa-square-phone"></i></a>
+				<p>12345 67890</p>
+				<a href=""><i class="fa-solid fa-envelope"></i></a>
+				<p>info@codingwing.com</p>
+				<a href=""><i class="fa-solid fa-location-crosshairs"></i></a>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+			<div id="tenbox5">
+				<p>Copyrights@2024 codingwing . All righs reserved</p>
+			</div>
+		</div>
+	</body>
+</html>
